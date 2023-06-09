@@ -5,21 +5,21 @@
 var createCounter = function(init) {
     let count = init;
 
-    function increment(){
+   const increment=()=>{
         return ++count;
     }
-    function decrement(){
+    const decrement=()=>{
         return --count;
     }
-    function reset(){
+    const reset=()=>{
         count=init;
         return count;
     }
 
     return {
-        increment:increment,
-        decrement:decrement,
-        reset:reset
+        increment,
+        decrement,
+        reset
     }
 };
 
